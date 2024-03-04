@@ -12,8 +12,17 @@ The AI-Driven Intelligent Surveillance System is an innovative solution designed
 5. User-friendly interface: This project has an intuitive and user-friendly interface for security operators to easily access, monitor, and manage surveillance data and alerts, enhancing operational efficiency and effectiveness.
 
 # Technologies Used:
+
+HTML
+
+CSS
+
+Javascript
+
 Open CV
 
 Yolo v8
 
 Flask
+
+Google Collab
