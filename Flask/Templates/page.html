@@ -39,14 +39,42 @@
         <p class="all-rights-reserved">All rights reserved</p>
       </div>
       <h3 class="intelliwatch">IntelliWatch</h3>
-      <button class="rectangle-container">
+      <div>
+        <video id="vid"></video>
+      </div>
+      <button class="rectangle-container" id="id" autoplay>
         <div class="group-child2"></div>
         <div class="group-child3"></div>
-        <div class="open-camera-parent">
+        <div class="open-camera-parent" >
           <p class="open-camera">Open Camera</p>
           <img class="group-icon" alt="" src="{{ url_for('static', filename='./assets1/Group 21.png') }}" />
         </div>
       </button>
     </div>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      let but = document.getElementById("but");
+      let video = document.getElementById("vid");
+      let mediaDevices = navigator.mediaDevices;
+      vid.muted = true;
+      but.addEventListener("click", () => {
+  
+        // Accessing the user camera and video.
+        mediaDevices
+          .getUserMedia({
+            video: true,
+            audio: true,
+          })
+          .then((stream) => {
+            // Changing the source of video to current stream.
+            video.srcObject = stream;
+            video.addEventListener("loadedmetadata", () => {
+              video.play();
+            });
+          })
+          .catch(alert);
+      });
+    });
+  </script>
 </html>
