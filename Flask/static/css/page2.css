@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-open-sans: "Open Sans";
+  --font-montserrat: Montserrat;
+  --font-roboto: Roboto;
+
+  /* font sizes */
+  --font-size-base: 16px;
+
+  /* Colors */
+  --color-white: #fff;
+
+  /* Border radiuses */
+  --br-xl: 20px;
+}
