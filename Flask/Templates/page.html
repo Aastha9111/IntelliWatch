@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="./page.css" />
-    <link rel="stylesheet" href="./page2.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/page.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/page2.css') }}" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
@@ -44,7 +44,7 @@
         <div class="group-child3"></div>
         <div class="open-camera-parent">
           <p class="open-camera">Open Camera</p>
-          <img class="group-icon" alt="" src="./assets1/Group 21.png" />
+          <img class="group-icon" alt="" src="{{ url_for('static', filename='./assets1/Group 21.png') }}" />
         </div>
       </button>
     </div>
