@@ -20,33 +20,25 @@
     />
   </head>
   <body>
-    <div class="frame-root">
-      <div class="vector-1-parent">
-        <img class="vector-1-icon" alt="" src="./assets/vector-2.png" />
+    <div class="vector-1-parent">
+      <img class="vector-1-icon" alt="" src="{{ url_for('static', filename='assets/vector-1.png') }}" />
 
-        <img class="ellipse-2-icon" alt="" src="./assets/ellipse-2.png" />
+      <img class="ellipse-2-icon" alt="" src="{{ url_for('static', filename='./assets/ellipse-2.png') }}" />
 
-        <img class="ellipse-1-icon" alt="" src="./assets/ellipse-1.png" />
+      <img class="ellipse-1-icon" alt="" src="{{ url_for('static', filename='./assets/ellipse-1.png') }}" />
 
-        <img class="group-11-icon" alt="" src="./assets/group-11.png" />
+      <img class="group-11-icon" alt="" src="{{ url_for('static', filename='./assets/group-11.png') }}" />
 
-        <img class="group-18-icon" alt="" src="./assets/group-18.png" />
+      <img class="group-18-icon" alt="" src="{{ url_for('static', filename='./assets/group-18.png') }}" />
 
-        <img class="line-3-icon" alt="" src="./assets/line-3.png" />
-
-        <img class="img1-icon1" alt="camera" src="./assets/img7.png" />
-
-        <img class="group-7-icon" alt="" src="./assets/group-7.png" />
-
-        <nav class="home-group">
-          <span class="home1">Home</span>
-          <span class="about-us1">About us</span>
-          <span class="faq1">FAQ</span>
-          <span class="login">Login</span>
-        </nav>
-      </div>
       <div class="frame-child"></div>
-      <img class="img2-icon1" alt="atm theft" src="./assets/img2.png" />
+      <img class="img2-icon1" alt="atm theft" src="{{ url_for('static', filename='./assets/img2.png') }}" />
+
+      <img class="line-3-icon" alt="" src="{{ url_for('static', filename='./assets/line-3.png') }}" />
+
+      <img class="img1-icon1" alt="camera" src="{{ url_for('static', filename='./assets/img1.png') }}" />
+
+      <img class="group-7-icon" alt="" src="{{ url_for('static', filename='./assets/group-7.png') }}" />
 
       <p class="step-into-the1" data-animate-on-scroll>
         "Step into the future of surveillance with our AI-powered camera
@@ -55,7 +47,7 @@
         threat detection. Protect your environment with confidence, backed by
         advanced AI analytics."
       </p>
-      <img class="line-2-icon" alt="" src="./assets/line-2.png" />
+      <img class="line-2-icon" alt="" src="{{ url_for('static', filename='./assets/line-2.png') }}" />
 
       <b class="eyes-that-never1"
         >Eyes that never blink, security that never sleeps.</b
@@ -70,21 +62,21 @@
         <img
           class="img3-icon1"
           alt="surveillance at office"
-          src="./assets/img3.png"
+          src="{{ url_for('static', filename='./assets/img3.png') }}"
           data-animate-on-scroll
         />
 
         <img
           class="img4-icon1"
           alt="surveillance at lock up cell"
-          src="./assets/img4.png"
+          src="{{ url_for('static', filename='./assets/img4.png') }}"
           data-animate-on-scroll
         />
 
         <img
           class="img5-icon1"
           alt="atm theft"
-          src="./assets/img5.png"
+          src="{{ url_for('static', filename='./assets/img5.png') }}"
           data-animate-on-scroll
         />
       </div>
@@ -98,7 +90,7 @@
           <img
             class="img6-icon1"
             alt="surveillance at shopping mall"
-            src="./assets/img6.png"
+            src="{{ url_for('static', filename='./assets/img6.png') }}"
           />
         </div>
       </div>
@@ -117,12 +109,18 @@
         <div class="group-child9"></div>
         <div class="get-started-group">
           <div class="get-started1">Get Started</div>
-          <img class="vector-icon1" alt="" src="./assets/Vector.png" />
+          <img class="vector-icon1" alt="" src="{{ url_for('static', filename='./assets/Vector.png') }}" />
         </div>
       </button>
       <nav class="intelliwatch-group">
         <b class="intelliwatch2">IntelliWatch</b>
-        <img class="frame-icon" alt="logo" src="./assets/Frame 2.png" />
+        <img class="frame-icon" alt="logo" src="{{ url_for('static', filename='./assets/Frame 2.png') }}" />
+      </nav>
+      <nav class="home-group">
+        <span class="home1">Home</span>
+        <span class="about-us1">About us</span>
+        <span class="faq1">FAQ</span>
+        <span class="login">Login</span>
       </nav>
       <footer class="group-footer">
         <div class="group-child10"></div>
