@@ -102,7 +102,7 @@
 .group-child3 {
   position: absolute;
   top: calc(50% - 36px);
-  left: 0;
+  left: calc(50% - 185px);
   border-radius: var(--br-xl);
   width: 370px;
   height: 72px;
@@ -128,7 +128,7 @@
 .group-icon {
   position: absolute;
   top: calc(50% - 10px);
-  left: 245px;
+  left: calc(50% + 112.5px);
   width: 20px;
   height: 20px;
   object-fit: cover;
@@ -147,7 +147,7 @@
   background-color: transparent;
   position: absolute;
   top: calc(50% - 124px);
-  left: 415px;
+  left: calc(50% - 185px);
   width: 370px;
   height: 72px;
 }
@@ -155,7 +155,7 @@
   width: 100%;
   position: relative;
   background: linear-gradient(90deg, #27399a, #432285);
-  height: 582px;
+  height: 640px;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-base);
